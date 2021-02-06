@@ -1,0 +1,275 @@
+*{
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:#242424;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Landing */
+
+
+.container{
+    padding: 0rem 5rem !important;
+}
+
+.navbar-brand{
+    font-size: 1.4rem !important;
+    font-weight: 700;
+
+}
+
+
+.navbar-collapse{
+    font-size: 1.2rem !important;
+}
+
+.navbar-nav li{
+    padding: 0px 15px !important;
+}
+
+.navbar-toggler{
+    outline: none !important;
+}
+
+.memoji{
+    width: 30rem;
+    margin-left: -5rem;
+}
+
+.greeting h1{
+    font-size: 7rem;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+
+.greeting p{
+    font-size: 1.6rem;
+    color: rgb(119, 119, 119);
+    padding-left: 0.4rem;
+}
+
+.greeting .jay{
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);        
+    background-repeat: no-repeat;
+    background-size: 100% 0.5em;
+    background-position: 0 89%;
+    animation: bro 1s alternate-reverse ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+
+@keyframes bro {
+    from{
+     background-size: 0% 0.5em; 
+    }
+    to{
+        background-size: 100% 0.5em;
+    }
+}
+
+.greeting,.design{
+    color: #b59ace;
+}
+.greeting,.tech{
+    color: #83b7eb;
+}
+
+.scroll{
+    width: 1.5rem;
+    animation: yoyo 1s infinite alternate-reverse;
+    
+}
+
+.scroller{
+    margin-top: -3rem !important;
+}
+
+@keyframes yoyo {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-15px);
+    }
+} 
+
+
+/* ---------Landing done-------------  */
+
+/* Projects */
+
+.background{
+    background-color: #F3F3F3;
+    margin-top: 1rem !important;
+}
+
+.projects{
+    padding-top: 2rem !important;
+}
+
+
+.shape{
+        width: 100px;
+        height: 10px;
+        background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);        
+}
+
+
+.projectstitle{
+    vertical-align: middle;
+    font-weight: 700 !important;
+    font-size: 2.3rem !important;
+}
+
+
+.card{
+    border-radius: 20px !important;
+    overflow: hidden;
+    transition: transform .3s ease-in-out;
+    width: 800px !important;
+    height: 400px ;
+}
+
+.card:hover{
+    transform: translate(0, -10px);
+    cursor: pointer;
+}
+
+
+
+/* -------------------------------SPIRITRACKR---------------------------- */
+
+.sp{
+background-color: #DEDEDE;
+}
+
+
+.project-name{
+    font-weight: 700;
+    font-size: 2.5rem !important;
+}
+
+.descriptionSP{
+    font-size: 1.2rem !important;
+    padding-top: 0.5rem !important;
+}
+
+
+.sptag{
+    background-color: rgba(222, 222, 222, .3);
+    border-radius: 10px;
+    padding: 7px 20px;
+    font-weight: 300;
+    font-size: 1.1rem !important;
+}
+
+
+
+/* ------------FOOTER-------------- */
+
+
+.fa-behance, .fa-linkedin-in, .fa-github{
+    color:#DEDEDE;
+    padding: 0px 20px !important;
+    transition: transform .3s ease-in-out;
+}
+
+.fa-behance:hover{
+    color: #242424;
+    cursor: pointer;
+    transform: translate(0, -3px)
+}
+.fa-linkedin-in:hover{
+    color: #242424;
+    cursor: pointer;
+    transform: translate(0, -3px)
+}
+.fa-github:hover{
+    color: #242424;
+    cursor: pointer;
+    transform: translate(0, -3px)
+}
+
+.fa-heart{
+    padding: 0px 5px !important;
+}
+
+.credits p{
+    font-size: 1.3rem !important;
+}
+
+
+
+/* ---------------------FOOTER END---------------------- */
+
+/* ---------------------RESPONSIVE---------------------- */
+
+@media (max-width: 576px) { 
+    .navbar-nav li{
+        padding: 0px !important;
+    }
+.container {
+    padding: 0 2rem !important;
+    }
+    .scroll{
+        visibility: hidden !important;
+    }
+    h1{
+        font-size: 3.8rem !important;
+    }
+    p{
+        font-size: 1.1rem !important;
+    }
+    .memoji{
+        width: 16rem !important;
+        margin: auto !important;
+        display: flex;
+        justify-content: center !important;
+    }
+    .scroller{
+        display: none;
+    }
+.projects{
+    padding-top: 1rem !important;
+}
+.projectstitle{
+    font-size: 2.2rem !important;
+}
+.project-name{
+    font-size: 2.2rem !important;
+}
+.shape{
+    width: 25% !important;
+    display: none;
+}
+
+.col-sm-7{
+border-radius: 20px 20px 0px 0px !important;
+}
+.hello{
+    padding-left: 0 !important;
+}
+.descriptionSP{
+    display: none;
+    visibility: hidden;
+}
+.credits p{
+    font-size: 1.1rem !important;
+}
+    .card {
+        height: inherit !important;
+    }
+}
+
+@media (min-width: 577px) {
+    .project-img-div{
+        height: 100%;
+    }
+}
