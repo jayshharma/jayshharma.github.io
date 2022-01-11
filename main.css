@@ -316,16 +316,16 @@ section ul li.active {
         font-size: 4rem !important;
     }
     .hero {
-        height: 100vh !important;
+        height: 80vh !important;
     }
     .greetings{
-        font-size: 1.5rem !important;
+        font-size: 1.3rem !important;
         line-height: normal;
     }
-    .memoji{
+    .memoji{ 
         width: 14rem !important;
         margin: auto !important;
-        display: flex;
+        display: none; 
         justify-content: center !important;
     }
     .abouttitle {
