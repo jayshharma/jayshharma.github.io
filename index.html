@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jay Sharma</title>
+    <link rel = "icon" type = "image/png" href = "Images/JayMemoji.svg">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="main.css" />
+
+     <!-- Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"rel="stylesheet"/>  
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"rel="stylesheet"/>
+    <link href="https://api.fontshare.com/css?f[]=cabinet-grotesk@100,200,400,500,700,800,900,1&display=swap" rel="stylesheet">
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+
+    <!-- Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head> 
+
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-light py-3 p-0 sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Jay Sharma</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav">
+          <ul class="ml-auto navbar-nav">
+            <li class="nav-item p-0">
+              <a class="nav-link" href="#aboutme">
+                About<span class="sr-only">(current)</span></a>
+            <li class="nav-item p-0">
+              <a class="nav-link" href="#portfolio">
+                Projects <span class="sr-only">(current)</span></a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <div data-scroll-container="">
+    <div class="container py-5 hero d-flex align-items-center">
+      <div class="row">
+        <div class="col-lg-8 greeting">
+          <h1 class="fluid-gradient-heading">Hi, I'm Jay</h1>
+          <p class="greetings">I'm a designer & developer with a passion for building human-centered user experiences.</p>
+          <p class="message">Currently seeking Summer 2022 internships in UX Design and Frontend Development.</p>
+          
+        </div>
+        <div class="col-lg-4 text-center">
+          <img class="memoji" src="/Images/JayMemoji.svg" alt="" data-tilt>
+        </div>
+        <div class="col-12 mt-lg-5 justify-content-center text-center scroll-icon"> 
+          <div data-aos="fade-down" data-aos-easing="ease-in-out-cubic" data-aos-duration="1000"> 
+          <i class="fas fa-chevron-down scroll py-5"></i> </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- About Me -->
+    <div data-scroll-container class="container pt-5"  id="aboutme"> 
+      <div class="row">
+        <div class="col-md-10 col-12 sectiontitle">
+          <h1 class="abouttitle">About Me</h1> <!--Potentially add animation data-aos="fade-up" data-aos-offset="300" data-aos-duration="500" data-aos-once="true" tabindex="0"-->
+          <p>Nice to e-meet you! I'm Jay, and I'm a designer and developer passionate about crafting experiences that empower people. 
+            I enjoy using my building blocks of design and development to solve complex problems with simple solutions. I believe in using design to create products that foster community and accessibility.
+          <p>I’m a first year Engineering student (‘25) at McMaster University.</p>
+          <p>Currently, I am seeking Summer 2022 internship opportunities in UX/Product Design and Frontend Development.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+     <div id="portfolio">
+      <div class="mt-5" >
+        <div class="container projects" >
+          <h2 class="projectstitle pt-2">Featured Projects</h2>
+ 
+          <!-- Filter -->
+
+          <section>
+          <ul class="d-flex flex-wrap my-5">
+            <li class="list active" data-filter="design">Design</li>
+            <li class="list mx-3" data-filter="development">Code</li>
+            <li class="list" data-filter="community">Community</li>
+          </ul>
+        </section>
+
+          <div class="row">
+            <div class="col-lg-4 mb-5 itemBox" data-item="design"> <!--Potentially add animation data-aos="fade-up" data-aos-offset="225" data-aos-once="true" tabindex="0" data-aos-anchor-placement="center-bottom"-->
+              <a href="/experiences/mitrabiotech.html">
+              <div class="card">
+                <img src="/Images/mitrabiotech.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Mitra Biotechnologies</h5>
+                  <p class="card-text">Designing a healthcare experience.</p>
+                  <div class="tags d-flex align-items-center">
+                    <h5 class="m-0"><span class="sptag mr-2">STARTUP</span></h5>
+                    <h5 class="m-0"><span class="sptag mr-2">FIGMA</span></h5>
+                    <h5 class="m-0"><span class="sptag mr-2">REACT</span></h5>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            
+            <div class="col-lg-4 mb-5 itemBox" data-item="design" >
+              <a href="/experiences/treetrackers.html">
+              <div class="card">
+                <img src="/Images/treetrackers.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">TreeTrackers</h5>
+                  <p class="card-text">A platform for monitoring and tracking trees across Canada.</p>
+                  <div class="tags d-flex align-items-center">
+                    <h5 class="m-0"><span class="sptag mr-2">INTERNSHIP</span></h5>
+                    <h5 class="m-0"><span class="sptag mr-2">FIGMA</span></h5>
+                   </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+            <div class="col-lg-4 mb-5 itemBox" data-item="design">
+              <a href="/experiences/mediatate.html">
+              <div class="card">
+                <img src="/Images/mediatatemockup-min.png" class="card-img-top sp-mediatate" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Mediatate</h5>
+                  <p class="card-text">A meditation app for alleviating distress during COVID-19.</p>
+                  <div class="tags d-flex align-items-center">
+                    <h5 class="m-0"><span class="sptag mr-2">HACKATHON</span></h5>
+                    <h5 class="m-0"><span class="sptag mr-2">ADOBE XD</span></h5>
+                   </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+            <div class="col-lg-4 mb-5 itemBox" data-item="design">
+              <a href="/experiences/mlg.html">
+              <div class="card">
+                <img src="/Images/mlg-min.png" class="card-img-top sp-mlg" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Major League Gardening</h5>
+                  <p class="card-text">A platform for budding gardeners to share, learn and compete.</p>
+                  <div class="tags d-flex align-items-center">
+                    <h5 class="m-0"><span class="sptag mr-2">HACKATHON</span></h5>
+                    <h5 class="m-0"><span class="sptag mr-2">ADOBE XD</span></h5>
+                   </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+            <div class="col-lg-4 mb-5 itemBox" data-item="design">
+              <a href="/experiences/spirittrackr.html">
+              <div class="card">
+                <img src="/Images/spirittrackr-min.png" class="card-img-top sp-spirit" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">SpiritTrackr</h5>
+                  <p class="card-text">Advocating for Indigenous communities in Canada.</p>
+                  <div class="tags d-flex align-items-center">
+                    <h5 class="m-0"><span class="sptag mr-2">HACKATHON</span></h5>
+                    <h5 class="m-0"><span class="sptag mr-2">ADOBE XD</span></h5>
+                   </div>
+                </div>
+              </div>
+            </div> 
+          </a>
+
+            <div class="col-lg-4 mb-5 itemBox hide" data-item="community">
+              <a href="/experiences/spark.html">
+              <div class="card">
+                <img src="/Images/Spark Mockup-min.png" class="card-img-top sp-spark" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">S.P.A.R.K</h5>
+                  <p class="card-text">Designing experiences for a student-led hackathon.</p>
+                  <div class="tags d-flex align-items-center">
+                    <h5 class="m-0"><span class="sptag mr-2">COMMUNITY</span></h5>
+                    <h5 class="m-0"><span class="sptag mr-2">ADOBE CC</span></h5>
+                   </div>
+                </div>
+              </div>
+            </div> 
+          </a>
+            
+            <div class="col-lg-4 mb-5 itemBox hide" data-item="community">
+              <a href="/experiences/hackclub.html">
+              <div class="card">
+                <img src="/Images/Hack Club-min.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Hack Club</h5>
+                  <p class="card-text">Building a community for designers and developers.</p>
+                  <div class="tags d-flex align-items-center">
+                    <h5 class="m-0"><span class="sptag mr-2">COMMUNITY</span></h5>
+                    <h5 class="m-0"><span class="sptag mr-2">FIGMA</span></h5>
+                   </div>
+                </div>
+              </div>
+            </div> 
+          </a>
+
+
+            <div class="col-lg-4 mb-5 itemBox hide" data-item="development">
+              <div class="card p-2">
+                <div class="card-body">
+                  <h5 class="card-title">InspoGram</h5>
+                  <p class="card-text">A visual moodboard app for storing creative work.</p>
+                  <div class="tags d-flex align-items-center">
+                    <h5 class="m-0"><span class="sptag mr-2">REACT</span></h5>
+                    <h5 class="m-0"><span class="sptag mr-2">FIREBASE</span></h5>
+                    <a href="https://github.com/jayshharma/InspoGram" class="ins-ic">
+                      <i class="fab fa-github fa-lg white-text fa-1.5x"></i>
+                    </a>
+                   </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-5 itemBox hide" data-item="development">
+              <div class="card p-2">
+                <div class="card-body">
+                  <h5 class="card-title">ClimateTrack</h5>
+                  <p class="card-text">A real-time natural event tracker powered by NASA API.</p>
+                  <div class="tags d-flex align-items-center">
+                  <h5 class="m-0"><span class="sptag mr-2">REACT</span></h5>
+                  <h5 class="m-0"><span class="sptag mr-2">NASA API</span></h5>
+                  <a href="https://github.com/jayshharma/ClimateTrack" class="ins-ic">
+                    <i class="fab fa-github fa-lg white-text fa-1.5x"></i>
+                  </a>
+                 </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-5 itemBox hide" data-item="development">
+              <div class="card p-2">
+                <div class="card-body">
+                  <h5 class="card-title">NBA Stats Explorer</h5>
+                  <p class="card-text">A web app for exploring NBA player stats.</p>
+                  <div class="tags d-flex align-items-center">
+                    <h5 class="m-0"><span class="sptag mr-2">PYTHON</span></h5>
+                    <h5 class="m-0"><span class="sptag mr-2">STREAMLIT</span></h5>
+                    <a href="https://github.com/jayshharma/NBA-Stats-App" class="ins-ic">
+                      <i class="fab fa-github fa-lg white-text fa-1.5x"></i>
+                    </a>
+                   </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-5 itemBox hide" data-item="development">
+              <div class="card p-2">
+                <div class="card-body">
+                  <h5 class="card-title">Get a Grip!</h5>
+                  <p class="card-text">A robotic system for medical procedures.</p>
+                  <div class="tags d-flex align-items-center">
+                    <h5 class="m-0"><span class="sptag mr-2">PYTHON</span></h5>
+                    <h5 class="m-0"><span class="sptag mr-2">Q-LABS</span></h5>
+                    <a href="https://github.com/jayshharma/Get-a-Grip" class="ins-ic">
+                      <i class="fab fa-github fa-lg white-text fa-1.5x"></i>
+                    </a>
+                   </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          </div>
+          </div>
+          </div>
+
+        <div class="container">
+          <div class="divider"></div>
+        </div>  
+      
+    <!-- Footer -->
+    
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row mx-0 my-5">
+          <div class="col-12 col-lg-6 px-0">
+            <h1 class="thanks m-0">Thanks for stopping by!</h1>
+            <p class="m-0 footerp my-4">I am always open to new opportunities. Reach out to me at <span class="highlight">sharmj28@mcmaster.ca</span> and let's get in touch.</p>
+            <div class="mb-4">
+            <a href="https://www.behance.net/jaysharma7" class="fb-ic pr-4">
+              <i class="fab fa-behance fa-lg fa-1.5x"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jay-sharma-639314181/"
+              class="li-ic pr-4"
+            >
+              <i class="fab fa-linkedin-in fa-lg fa-1.5x"></i>
+            </a>
+            <a href="https://github.com/jayshharma" class="ins-ic">
+              <i class="fab fa-github fa-lg white-text fa-1.5x"></i>
+            </a>
+          </div>
+            <p>
+              Designed & developed by
+             Jay Sharma
+            </p>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="script.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

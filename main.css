@@ -1,0 +1,493 @@
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:#141414;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+
+}
+
+body {
+    animation: fadeInAnimation cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+::selection {
+    background: #f3f3f3;
+}
+
+/* Landing */
+
+
+.container{
+    padding: 0rem 5rem !important;
+}
+
+.navbar {
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #FFFFFF;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.1rem !important;
+}
+
+.navbar-collapse{
+    font-size: 1.1rem !important;
+}
+
+.navbar-nav li{
+    padding: 0px 15px !important;
+}
+
+.navbar-toggler{
+    outline: none !important;
+}
+
+
+
+.greeting h1{
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: -0.1rem;
+}
+
+.fluid-gradient-heading{
+    background: linear-gradient(120deg, #ff6d53 0%, #ff7a97 13.02%, #ff58c7 25.52%, #9f7aff 37.5%, #399efc 49.48%, #4e6cff 63.02%, #ff68a4 72.92%, #fd7169 84.38%, #ff5a35 97.92%);
+    background-size: 200% 200%;
+	-webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: intro-gradient 5s infinite ease both;
+    animation: intro-gradient 5s infinite ease both;
+}
+
+@keyframes intro-gradient { 
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+
+.greetings{
+    font-size: 2rem;
+    line-height: 40px;
+}
+
+.message {
+    color: #7e7e7e;
+}
+
+.sectiontitle h1 {
+    font-size: 2.2rem;
+    line-height: 56px;
+    font-weight: bold;
+}
+
+.sectiontitle p {
+    font-size: 1rem;
+    line-height: 24px;
+    color: #636363;
+}
+
+.highlight {
+
+    font-weight: bold;
+}
+
+.hero {
+    height: 90vh;
+}
+
+.scroll{
+    animation: yoyo 0.6s infinite alternate ease-in-out;  
+
+}
+
+@keyframes yoyo {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-15px);
+    }
+} 
+
+
+/* ---------Landing done-------------  */
+
+/* Projects */
+
+.background{
+    margin-top: 1rem !important;
+}
+
+.projects{
+    padding-top: 2rem !important;
+}
+
+.shape{
+        width: 100px;
+        height: 10px;
+        background-color: #2d6efa; 
+}
+
+.projectstitle{
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+section ul {
+    list-style-type: none;
+}
+
+section ul li {
+    padding: 8px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+
+section ul li.active {
+    color: white;
+    background-color: #141414;
+}
+
+.row .itemBox.hide {
+    display: none;
+}
+
+
+.card-title {
+    font-weight: bold;
+}
+
+.row a:hover {
+    text-decoration: none;
+}
+
+
+.projectcard {
+    transition: .7s cubic-bezier(.23,1,.32,1)
+}
+
+.card{
+    border-radius: 10px !important;
+    overflow: hidden;
+    transition: transform .3s ease-in-out;
+    border: 1px solid #f0f0f0 !important;
+    transition: all .2s;
+}
+
+.card:hover{
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    -webkit-transform: scale(1.005) translateY(-10px);
+    transform: scale(1.005) translateY(-10px);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    align-items: center;
+}
+
+
+/* -------------------------------CARD ELEMENTS---------------------------- */
+
+.sp{
+    background-color: #dedede;
+}
+
+.sp-spark {
+    background-color: #F6C136;
+}
+
+.sp-mlg {
+    background-color: rgb(45, 199, 31);
+}
+
+.sp-mediatate {
+    background-color: rgb(122, 186, 238);
+}
+
+.sp-spirit {
+    background-color: rgb(255, 156, 27);
+}
+
+.sp-mitrabiotech {
+    background-color: rgb(247, 247, 247);
+}
+
+.sp-treetrackers {
+    background-color: rgb(7, 145, 7);
+}
+
+.project-name{
+    font-weight: 700;
+    font-size: 2rem !important;
+}
+
+.descriptionSP{
+    font-size: 1rem !important;
+    padding-top: 0.5rem !important;
+}
+
+.sptag{
+    background-color: rgba(222, 222, 222, .3);
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-weight: 300;
+    font-size: 12px !important;
+}
+
+
+
+/* ------------FOOTER-------------- */
+
+.fa-behance, .fa-linkedin-in, .fa-github{
+    color:#DEDEDE;
+    transition: transform .3s ease-in-out;
+}
+
+.fa-behance:hover{
+    color: #242424;
+    cursor: pointer;
+    transform: translate(0, -3px)
+}
+.fa-linkedin-in:hover{
+    color: #242424;
+    cursor: pointer;
+    transform: translate(0, -3px)
+}
+.fa-github:hover{
+    color: #242424;
+    cursor: pointer;
+    transform: translate(0, -3px)
+}
+
+.divider {
+    height: 1px;
+    background-color: #f0f0f0;
+}
+
+.thanks {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.footerp{
+    font-size: 1rem;
+}
+
+/* ---------------------FOOTER END---------------------- */
+
+/* ---------------------RESPONSIVE---------------------- */
+
+@media (max-width: 576px) { 
+    .navbar-nav li{
+        padding: 0px !important;
+    }
+    .container {
+        padding: 0 2rem !important;
+        }
+    h1{
+        font-size: 4rem !important;
+    }
+    .hero {
+        height: 100vh !important;
+    }
+    .greetings{
+        font-size: 1.5rem !important;
+        line-height: normal;
+    }
+    .memoji{
+        width: 14rem !important;
+        margin: auto !important;
+        display: flex;
+        justify-content: center !important;
+    }
+    .abouttitle {
+        font-size: 2.2rem !important;
+    }
+    .scroll-icon {
+        display: none;
+    }
+    .projects{
+        padding-top: 1rem !important;
+    }
+    .projectstitle{
+        font-size: 2.2rem !important;
+    }
+    .project-name{
+        font-size: 2.2rem !important;
+    }
+    .thanks {
+        font-size: 1.5rem !important;
+    }
+    .hello{
+        padding-left: 0 !important;
+    }
+    .descriptionSP{
+        display: none;
+        visibility: hidden;
+    }
+    .credits p{
+        font-size: 1.1rem !important;
+    }
+    .card {
+        height: inherit !important;
+    }
+
+    section ul li {
+        margin: 10px 0px;
+    }
+
+    .mbtitle {
+        font-size: 2.5rem !important;
+    }
+
+    .tstitle {
+        font-size: 2.5rem !important;
+    }
+
+    .mdtitle {
+        font-size: 2.5rem !important;
+    }
+
+    .hbtitle {
+        font-size: 2.5rem !important;
+    }
+
+    .casesubtitle {
+        font-size: 2.2rem !important;
+    }
+
+    .sptitle {
+        font-size: 2.2rem !important;
+    }
+    .sprtitle {
+        font-size: 2.2rem !important;
+    }
+    .mlgtitle {
+        font-size: 2.2rem !important;
+    }
+}
+
+
+/* Mitrabiotech Page */
+
+.comingsoon {
+    font-weight: bold;
+    color: #7e7e7e;
+}
+
+.mbtitle {
+    font-weight: bold;
+    font-size: 3rem;
+    color: #1E7EFB;
+}
+
+.tstitle {
+    font-weight: bold;
+    font-size: 3rem;
+    color: #008000;
+}
+
+.mdtitle {
+    font-weight: bold;
+    font-size: 3rem;
+    color: rgb(122, 186, 238);
+}
+
+.hbtitle {
+    font-weight: bold;
+    font-size: 3rem;
+    color: #A47EF1;
+}
+
+.sptitle {
+    font-weight: bold;
+    font-size: 3rem;
+    color: #F6C136;
+}
+
+.sprtitle {
+    font-weight: bold;
+    font-size: 3rem;
+    color: rgb(255, 156, 27);;
+}
+
+.mlgtitle {
+    font-weight: bold;
+    font-size: 3rem;
+    color: rgb(45, 199, 31);
+}
+
+.casesubtitle {
+    font-weight: bold;
+}
+
+.mitracaseimage {
+    border-radius: 20px;
+}
+
+.case h5 {
+    font-weight: bold;
+}
+
+.mediatatecaseimage {
+    border-radius: 20px;
+    background-color: rgb(122, 186, 238);
+}
+
+.sparkcaseimage {
+    border-radius: 20px;
+    background-color: #F6C136;
+}
+
+.stcaseimage {
+    border-radius: 20px;
+    background-color: rgb(255, 156, 27);
+}
+
+.mlgcaseimage {
+    border-radius: 20px;
+    background-color: rgb(45, 199, 31);
+}
+
+.mbsub {
+    color: rgb(122, 186, 238);
+}
+
+.spsub {
+  color: #F6C136;
+}
+
+.sprsub {
+    color: rgb(255, 156, 27);
+}
+
+.mlgsub {
+    color: rgb(45, 199, 31);
+}
