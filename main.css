@@ -54,12 +54,12 @@ body {
 
 .navbar-nav li{
     padding: 0px 15px !important;
+    font-size: 1rem;
 }
 
 .navbar-toggler{
     outline: none !important;
 }
-
 
 
 .greeting h1{
@@ -91,6 +91,7 @@ body {
 
 .message {
     color: #7e7e7e;
+    font-family: 'Space Grotesk';
 }
 
 .sectiontitle h1 {
