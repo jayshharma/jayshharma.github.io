@@ -1,2 +1,6 @@
 # Jay's Porfolio Website
-My portfolio website developed using HTML, CSS and Bootstrap 4. 
+The second version of my personal website developed using HTML, CSS, JavaScript and Bootstrap 4. 
+<br> https://jayshharma.github.io/ 
+
+
+![](Images/sitethumbnail.PNG)
