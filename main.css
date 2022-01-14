@@ -331,9 +331,9 @@ section ul li.active {
     .abouttitle {
         font-size: 2.2rem !important;
     }
-    .scroll-icon {
+    /* .scroll-icon {
         display: none;
-    }
+    } */
     .projects{
         padding-top: 1rem !important;
     }
