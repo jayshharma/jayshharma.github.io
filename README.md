@@ -3,4 +3,4 @@ The second version of my personal website developed using HTML, CSS, JavaScript 
 <br> https://jayshharma.github.io/ 
 
 
-![](Images/sitethumbnail.PNG)
+![](Images/webthumbnail.PNG)
