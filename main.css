@@ -44,7 +44,7 @@ body {
 }
 
 .navbar-brand {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.1rem !important;
 }
 
@@ -91,7 +91,6 @@ body {
 
 .message {
     color: #7e7e7e;
-    font-family: 'Space Grotesk';
 }
 
 .sectiontitle h1 {
