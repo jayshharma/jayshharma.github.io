@@ -1,5 +1,5 @@
 *{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Archivo', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -86,7 +86,6 @@ body {
 
 .greetings{
     font-size: 2rem;
-    line-height: 40px;
 }
 
 .message {
@@ -95,15 +94,9 @@ body {
 
 .sectiontitle h1 {
     font-size: 2.2rem;
-    line-height: 56px;
     font-weight: bold;
 }
 
-.sectiontitle p {
-    font-size: 1rem;
-    line-height: 24px;
-    color: #636363;
-}
 
 .highlight {
 
@@ -117,6 +110,15 @@ body {
 .scroll{
     animation: yoyo 0.6s infinite alternate ease-in-out;  
 
+}
+
+.experiencetitle {
+    font-weight: bold;
+}
+
+.experiencedate {
+    font-size: 12px;
+    font-weight: 500;
 }
 
 @keyframes yoyo {
