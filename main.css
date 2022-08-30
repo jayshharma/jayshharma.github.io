@@ -121,14 +121,19 @@ body {
     font-weight: 500;
 }
 
-@keyframes yoyo {
-    from {
-        transform: translateY(0px);
-    }
-    to {
-        transform: translateY(-15px);
-    }
-} 
+.external-link {
+    width: 75%;
+}
+
+.socials {
+    transition: transform .2s ease-in-out;
+}
+
+.socials:hover{
+    cursor: pointer;
+    transform: translate(0, -4px)
+}
+
 
 
 /* ---------Landing done-------------  */
@@ -267,26 +272,6 @@ section ul li.active {
 
 /* ------------FOOTER-------------- */
 
-.fa-behance, .fa-linkedin-in, .fa-github{
-    color:#DEDEDE;
-    transition: transform .3s ease-in-out;
-}
-
-.fa-behance:hover{
-    color: #242424;
-    cursor: pointer;
-    transform: translate(0, -3px)
-}
-.fa-linkedin-in:hover{
-    color: #242424;
-    cursor: pointer;
-    transform: translate(0, -3px)
-}
-.fa-github:hover{
-    color: #242424;
-    cursor: pointer;
-    transform: translate(0, -3px)
-}
 
 .divider {
     height: 1px;
