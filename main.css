@@ -379,6 +379,9 @@ section ul li.active {
     .mlgtitle {
         font-size: 2.2rem !important;
     }
+    .external-link {
+        display: none;
+    }
 }
 
 
