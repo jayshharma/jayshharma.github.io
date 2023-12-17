@@ -99,6 +99,8 @@
           <p class="mb-4">I'm Jay, and I'm a product-minded developer with experience across design and engineering. I enjoy solving problems with a human-centered approach, and have worked in cross-functional teams to deliver digital solutions using modern technologies.</p>
           <p>I'm a Software Engineering student ('25) at McMaster University. When I'm not studying, you can find me attending hackathons, volunteering, or playing basketball.</p>
           <div class="divider"></div>
+          <div class="row">
+          <div class="col-lg-6">
           <div class="experience my-4">
             <div class="title d-flex align-items-center">
             <p class="experiencetitle my-1 mr-2">Software Engineer Intern, OMERS</p>
@@ -106,7 +108,8 @@
             <p class="experiencedate mt-2 mb-3"><span class="sptag">MAY 2023 - AUG 2023</span></p>
             <p>Digitized a paper-based form streamlining pension adminstration for 1000+ employers.</p>
           </div>
-          <div class="divider"></div>
+          </div>
+          <div class="col-lg-6">
           <div class="experience my-4">
             <div class="title d-flex align-items-center">
             <p class="experiencetitle my-1 mr-2">Software Engineer Intern, Deloitte</p>
@@ -114,7 +117,10 @@
             <p class="experiencedate mt-2 mb-3"><span class="sptag">MAY 2022 - AUG 2022</span></p>
             <p>Engineered an enterprise digital insurance solution for a Canadian crown corporation.</p>
           </div>
-          <div class="divider"></div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-lg-6">
           <div class="experience my-4">
             <div class="title d-flex align-items-center">
               <p class="experiencetitle my-1 mr-2">Frontend Developer, Mitra Biotechnologies</p>
@@ -123,9 +129,11 @@
               </a>
               </div>          
               <p class="experiencedate mt-2 mb-3"><span class="sptag">JUNE 2021 - APR 2022</span></p>
-          <p>Redesigned and developed the mitrabiotechnologies.com website to promote rapid point of care diagnostics for cardiovascular disease conditions.</p>
+          <p>Redesigned and developed the mitrabiotechnologies.com website to promote rapid point of care diagnostics.</p>
           </div>
-          <div class="divider"></div>
+        </div>
+        <div class="col-lg-6">
+
           <div class="experience my-4">
             <div class="title d-flex align-items-center">
               <p class="experiencetitle my-1 mr-2">Web Developer Intern, CityStudio Canada</p>
@@ -135,6 +143,8 @@
               </div>          
               <p class="experiencedate mt-2 mb-3"><span class="sptag">JUNE 2021 - SEP 2021</span></p>
           <p>Launched a digital platform for individuals, community groups, and municipalities to plant and monitor trees across Canada.</p>
+          </div>
+          </div>
           </div>
           <div class="divider"></div>
           <p class="mt-4">I'm currently on the lookout for Summer 2024 opportunities, and would love to get in touch. Feel free to shoot me a message at <a href="mailto:sharmj28@mcmaster.ca"><span class="highlight">sharmj28@mcmaster.ca</span></a>.</p>
@@ -152,16 +162,34 @@
 
           <section>
           <ul class="d-flex flex-wrap my-5">
-            <li class="list active" data-filter="work">Work</li>
+            <!-- <li class="list mx-3" data-filter="work">Work</li> -->
+            <li class="list active" data-filter="design">Design</li>
             <li class="list mx-3" data-filter="development">Code</li>
-            <li class="list mr-3" data-filter="design">Design</li>
-            <li class="list" data-filter="community">Community</li>
+            <li class="list mr-3" data-filter="community">Community</li>
+            <li class="list" data-filter="blog">Blogs</li>
+
           </ul>
         </section>
 
           <div class="row">
 
-            <div class="col-lg-4 mb-5 itemBox hide" data-item="design">
+            <div class="col-lg-4 mb-5 itemBox hide" data-item="blog"> <!--Potentially add animation data-aos="fade-up" data-aos-offset="225" data-aos-once="true" tabindex="0" data-aos-anchor-placement="center-bottom"-->
+              <a href="/blogs/text-wrap-balance.html">
+              <div class="card">
+                <img src="/Images/carbon.png" class="card-img-top text-wrap-img" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CSS text-wrap: balance</h5>
+                  <p class="card-text">Bringing the art of balancing text to the web</p>
+                  <div class="tags d-flex align-items-center">
+                    <h5 class="m-0"><span class="sptag mr-2">Web Design</span></h5>
+                    <h5 class="m-0"><span class="sptag mr-2">CSS</span></h5>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <div class="col-lg-4 mb-5 itemBox" data-item="design">
               <a href="/experiences/spirittrackr.html">
               <div class="card">
                 <img src="/Images/spirittrackr-min.png" class="card-img-top sp-spirit" alt="...">
@@ -176,7 +204,7 @@
             </div> 
           </a>
 
-            <div class="col-lg-4 mb-5 itemBox hide" data-item="design">
+            <div class="col-lg-4 mb-5 itemBox" data-item="design">
               <a href="/experiences/mediatate.html">
               <div class="card">
                 <img src="/Images/mediatatemockup-min.png" class="card-img-top sp-mediatate" alt="...">
@@ -191,7 +219,7 @@
             </div>
           </a>
 
-            <div class="col-lg-4 mb-5 itemBox hide" data-item="design">
+            <div class="col-lg-4 mb-5 itemBox" data-item="design">
               <a href="/experiences/mlg.html">
               <div class="card">
                 <img src="/Images/mlg-min.png" class="card-img-top sp-mlg" alt="...">
@@ -206,7 +234,7 @@
             </div>
           </a>
 
-            <div class="col-lg-4 mb-5 itemBox" data-item="work"> <!--Potentially add animation data-aos="fade-up" data-aos-offset="225" data-aos-once="true" tabindex="0" data-aos-anchor-placement="center-bottom"-->
+            <!-- <div class="col-lg-4 mb-5 itemBox hide" data-item="work"> Potentially add animation data-aos="fade-up" data-aos-offset="225" data-aos-once="true" tabindex="0" data-aos-anchor-placement="center-bottom"
               <a href="/experiences/mitrabiotech.html">
               <div class="card">
                 <img src="/Images/mitrabiotech.png" class="card-img-top" alt="...">
@@ -221,7 +249,7 @@
               </div>
             </a>
             
-            <div class="col-lg-4 mb-5 itemBox" data-item="work">
+            <div class="col-lg-4 mb-5 itemBox hide" data-item="work">
               <a href="/experiences/treetrackers.html">
               <div class="card">
                 <img src="/Images/treetrackers.png" class="card-img-top" alt="...">
@@ -234,7 +262,7 @@
                 </div>
               </div>
             </div>
-          </a>
+          </a> -->
 
             <div class="col-lg-4 mb-5 itemBox hide" data-item="community">
               <a href="/experiences/spark.html">

@@ -1,5 +1,5 @@
 *{
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,10 +12,19 @@ html{
 
 }
 
+/* p {
+    font-weight: bold;
+    color: #7e7e7e;
+} */
+
 body {
     animation: fadeInAnimation cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+
+video {
+    clip-path: inset(0px 1px);
 }
 
 @keyframes fadeInAnimation {
@@ -229,6 +238,7 @@ section ul li.active {
 }
 
 
+
 /* -------------------------------CARD ELEMENTS---------------------------- */
 
 .sp{
@@ -249,6 +259,11 @@ section ul li.active {
 
 .sp-spirit {
     background-color: rgb(255, 156, 27);
+}
+
+.text-wrap-img {
+    background: linear-gradient(120deg, #ff6d53 0%, #ff7a97 13.02%, #ff58c7 25.52%, #9f7aff 37.5%, #399efc 49.48%, #4e6cff 63.02%, #ff68a4 72.92%, #fd7169 84.38%, #ff5a35 97.92%);
+    background-size: 200% 200%;
 }
 
 .sp-mitrabiotech {
@@ -276,6 +291,127 @@ section ul li.active {
     font-weight: 300;
     font-size: 12px !important;
 }
+
+.textbox {
+    animation: animateText 2s cubic-bezier(0.215, 0.610, 0.355, 1)
+}
+
+
+@keyframes animateText { 
+    0% { 
+        transform: rotate(0deg); 
+    } 
+
+    50% { 
+        transform: rotate(-5deg); 
+    } 
+
+    100% { 
+        transform: rotate(0deg); 
+    } 
+
+}
+
+/* -------------------------------BLOG---------------------------- */
+
+
+.code {
+    background: linear-gradient(120deg, #ff6d53 0%, #ff7a97 13.02%, #ff58c7 25.52%, #9f7aff 37.5%, #399efc 49.48%, #4e6cff 63.02%, #ff68a4 72.92%, #fd7169 84.38%, #ff5a35 97.92%);
+    background-size: 100% 100%;
+	-webkit-background-clip: text;
+    background-clip: text;
+    font-weight: bold;
+}
+
+
+.takeaway {
+    border: none !important;
+    border-radius: 0px !important;
+    background-color: rgba(243, 243, 243, 0.3) !important;
+}
+
+.interacExTag{
+    background-color: rgba(222, 222, 222, .3);
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-weight: 300;
+}
+
+.codeEx {
+    background-color: rgba(243, 243, 243, 0.3);
+    align-items: center;
+    padding: 25px;
+    max-width: 1010px;
+}
+
+.unbalanced-text {
+    max-inline-size: 50ch;
+    /* color: #dc3545; */
+    cursor: pointer;
+  }
+
+  .balanced-text {
+    max-inline-size: 50ch;
+    text-wrap: balance;
+    /* color: #198754; */
+  }
+
+  .interacEx {
+    background-color: rgba(243, 243, 243, 0.3);
+    align-items: center;
+    padding: 25px;
+    max-width: 1010px;
+  }
+
+  .note {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: rgba(243, 243, 243, 0.3);
+    font-weight: 600;
+  }
+
+  .announcement {
+    width: 24px;
+    margin-right: 8px;
+  }
+
+  .headline {
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: -0.1rem;
+    text-wrap: balance;
+  }
+
+  .subheading {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: -0.1rem;
+    /* text-wrap: balance; */
+  }
+
+  
+
+  .fluid-gradient{
+    background: linear-gradient(120deg, #ff6d53 0%, #ff7a97 13.02%, #ff58c7 25.52%, #9f7aff 37.5%, #399efc 49.48%, #4e6cff 63.02%, #ff68a4 72.92%, #fd7169 84.38%, #ff5a35 97.92%);
+    background-size: 200% 200%;
+	-webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  #memoji-img {
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .supercharge {
+    text-wrap: balance;
+  }
+
+/* .takeaway-msg {
+    font-weight: bold;
+    color: #7e7e7e;
+} */
 
 
 
@@ -309,6 +445,15 @@ section ul li.active {
         }
     h1{
         font-size: 4rem !important;
+    }
+    .headline{
+        font-size: 3rem !important;
+    }
+    .subheading {
+        font-size: 2rem !important;
+    }
+    .takeaway2 {
+        margin-top: 1.5rem !important;
     }
     .hero {
         height: 85vh !important;
