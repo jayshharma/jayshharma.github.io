@@ -345,7 +345,9 @@ section ul li.active {
 }
 
 .unbalanced-text {
+    font-weight: 600;
     max-inline-size: 50ch;
+    letter-spacing: -0.09rem;
     /* color: #dc3545; */
     cursor: pointer;
   }
@@ -353,6 +355,7 @@ section ul li.active {
   .balanced-text {
     max-inline-size: 50ch;
     text-wrap: balance;
+    letter-spacing: -0.09rem;
     /* color: #198754; */
   }
 
