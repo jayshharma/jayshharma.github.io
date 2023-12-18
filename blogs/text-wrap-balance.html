@@ -78,26 +78,30 @@
       </div>
     </nav>
 
-    <video class="animationVid" id="vid" width="100%" muted>
+    <video class="animationVid" id="vid" width="100%" muted playsinline>
       <source src="/Images/IntroAnimation.mov" type="video/mp4" />
     </video>
 
     <div class="container case mt-5">
       <!-- <img src="/Images/TextBox.svg" alt="" class="w-100 textbox" /> -->
-      <h1 class="mt-5 fluid-gradient headline" data-aos="fade-up">
+      <h1 class="mt-5 fluid-gradient headline">
         Finding the right balance with CSS text-wrap.
       </h1>
-      <p class="text-secondary" data-aos="fade-up">December 18th, 2023</p>
-      <p class="mt-5" data-aos="fade-up">
-        Have you ever found yourself playing a guessing game with line breaks, wondering if your text will elegantly wrap itself around the page? As a developer, I've been there, and I can confirm – it's a real struggle. Achieving a balanced text wrap becomes quite a challenge when you lack information about the size, font, or even the language of a headline.
+      <p class="text-secondary">December 18th, 2023</p>
+      <p class="mt-5">
+        Have you ever found yourself playing a guessing game with line breaks,
+        wondering if your text will elegantly wrap itself around the page? As a
+        developer, I've been there, and I can confirm – it's a real struggle.
+        Achieving a balanced text wrap becomes quite a challenge when you lack
+        information about the size, font, or even the language of a headline.
       </p>
-      <p data-aos="fade-up">
+      <p>
         To overcome this issue, CSS recently introduced
         <code class="code">text-wrap: balance</code>. This new property brings
         the art of balancing text in an automated way, with just one line of
         code.
       </p>
-      <p data-aos="fade-up">
+      <p>
         Let's take a closer look. Click on the headline below to experience the
         magic!
       </p>
@@ -159,86 +163,75 @@
         </div>
       </div>
 
-      <p class="mt-3" data-aos="fade-up">
+      <p class="mt-3">
         As we can see, the style ensures that the text is distributed evenly
         across multiple lines, enhancing layout quality and readability.
       </p>
 
-      <h6 class="mt-5 font-weight-bold" data-aos="fade-up">HOW IT WORKS</h6>
-      <h2 class="subheading supercharge" data-aos="fade-up">
-        Supercharge with one line of code
-      </h2>
-      <p class="mt-3" data-aos="fade-up">
+      <h6 class="mt-5 font-weight-bold">HOW IT WORKS</h6>
+      <h2 class="subheading supercharge">Supercharge with one line of code</h2>
+      <p class="mt-3">
         To achieve balancing, all we need to do is simply add
         <code class="code">text-wrap: balance</code> to the element we want to
         style. As shown in the code below, both paragraphs are constrained to a
         <code class="code">max-inline-size</code> of 60ch. However, we note the
-        difference between the two text blocks. The first one, lacking the
-        style has a <strong>hanging orphan</strong> (single word at the end). While the second one, with the applied
-        style, rearranges for a cleaner and more cohesive display.
+        difference between the two text blocks. The first one, lacking the style
+        has a hanging orphan (single word at the end). While the second one,
+        with the applied style, rearranges for a cleaner and more cohesive
+        display.
       </p>
 
-      <iframe
-        src="https://codesandbox.io/embed/mv9vg9?view=Editor+%2B+Preview&module=%2Fstyles.css"
-        style="
-          width: 100%;
-          height: 500px;
-          border: 0;
-          border-radius: 4px;
-          overflow: hidden;
-          margin-top: 1rem;
-        "
-        title="css-text-wrap-balance (forked)"
-        allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-        sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-        data-aos="fade-up"
-      ></iframe>
+      <iframe src="https://codesandbox.io/embed/ydgzlp?view=Editor+%2B+Preview&module=%2Fstyles.css"
+      style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden; margin-top: 1rem"
+      title="css-text-wrap-balance"
+      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+      data-aos="fade-up"
+    ></iframe>
+    
 
-      <div class="note mt-3" data-aos="fade-up">
+      <h6 class="mt-5 font-weight-bold">LIMITATIONS</h6>
+      <h2 class="subheading">No more than 4 lines</h2>
+      <p class="mt-3">
+        While <code class="code">text-wrap: balance</code> provides a great
+        solution for wrapping text, it has some performance constraints. It can
+        only be applied to 4 or less lines of text. As a result, it should
+        primarily be used for headlines. Consider adding the following snippet
+        of code to your next project.
+      </p>
+
+      <div>
+        <img src="/Images/codesnippet.png" alt="" width="100%" data-aos="fade-up"/>
+      </div>
+
+      <!-- <div class="note mt-3" >
         <img src="/Images/loudspeaker_1f4e2.png" class="announcement" />
         <p class="mt-3">
           Important note: applying the property will not change the inline-size
           or max-width of the element.
         </p>
-      </div>
+      </div> -->
 
-      <img
-        src="/Images/ComparisonMaxW.svg"
-        alt=""
-        width="100%"
-        data-aos="fade-up"
-      />
+      <h2 class="subheading">Whitespace can be a problem</h2>
 
-      <p class="mt-3" data-aos="fade-up">
+      <p class="mt-3">
+        It's important to note that applying the property will not change the
+        inline-size or max-width of the element.
+      </p>
+
+      <img src="/Images/ComparisonMaxW.svg" alt="" width="100%" data-aos="fade-up"/>
+
+      <p class="mt-3">
         As we can see in the illustration, applying
         <code class="code">text-wrap: balance</code> modifies the arrangement of
         the words rather than the max-width. In some cases, this can lead to
         notable white space which may result in a poor design.
       </p>
 
-      <h6 class="mt-5 font-weight-bold" data-aos="fade-up">LIMITATIONS</h6>
-      <h2 class="subheading" data-aos="fade-up">No more than 4 lines</h2>
-      <p class="mt-3" data-aos="fade-up">
-        While <code class="code">text-wrap: balance</code> provides a great
-        solution for wrapping text, it has some performance constraints. It can
-        only be applied to 4 or less lines of text. As a result, it should
-        primarily be used for <strong>headlines</strong>. Consider adding the
-        following snippet of code to your next project.
-      </p>
-
-      <div>
-        <img
-          src="/Images/codesnippet.png"
-          alt=""
-          width="100%"
-          data-aos="fade-up"
-        />
-      </div>
-
-      <h6 class="mt-5 font-weight-bold" data-aos="fade-up">BROWSER SUPPORT</h6>
-      <h2 class="subheading" data-aos="fade-up">Supporting 3 browsers</h2>
+      <h6 class="mt-5 font-weight-bold">BROWSER SUPPORT</h6>
+      <h2 class="subheading">Supporting 3 browsers</h2>
       <div class="row">
-        <div class="col-lg-6" data-aos="fade-up">
+        <div class="col-lg-6">
           <p class="mt-3">
             The <code class="code">text-wrap: balance</code> property does not
             support all browsers. It is currently compatible with
@@ -248,7 +241,7 @@
             platforms.
           </p>
         </div>
-        <div class="col-lg-6 d-flex justify-content-center" data-aos="fade-up">
+        <div class="col-lg-6 d-flex justify-content-center" data-aos="fade-up"> 
           <img src="/Images/Browsers.svg" alt="" />
         </div>
       </div>
@@ -311,7 +304,7 @@
           </div>
         </div>
       </div>
-      <p class="mt-3" data-aos="fade-up">
+      <p class="mt-3">
         Overall, incorporating
         <code class="code">text-wrap: balance</code> into your web development
         toolkit proves to be a game-changer for achieving balanced and visually
