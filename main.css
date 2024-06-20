@@ -435,7 +435,15 @@ section ul li.active {
     font-size: 1rem;
 }
 
-/* ---------------------FOOTER END---------------------- */
+/* ---------------------FALL-BACK BEHAVIOUR---------------------- */
+
+@supports not (text-wrap: balance) {
+    .balanced-text {
+        
+    }
+}
+
+
 
 /* ---------------------RESPONSIVE---------------------- */
 
